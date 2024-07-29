@@ -17,7 +17,6 @@
     "css-doodle": "^0.39.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "firebase": "^10.12.3",
     "gh-pages": "^6.1.1",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.5.1",

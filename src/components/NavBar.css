@@ -1,0 +1,125 @@
+/* Style for the navigation bar */
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #e4b650; /* Updated color for a warmer tone */
+  padding: 0 1rem;
+  position: fixed; /* Fixed position for sticky effect */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deep shadow for better visibility */
+  justify-content: space-between;
+  height: 70px; /* Increased height for better spacing */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background and shadow */
+}
+
+nav:hover {
+  background-color: #d4a23b; /* Darken background on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.logo-container {
+  margin-left: 0rem;
+  transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.logo {
+  height: 60px; /* Adjusted for better fit */
+  width: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  margin-right: 100px;
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+nav ul li {
+  margin-left: 20px; /* Reduced margin for spacing */
+  position: relative; /* For pseudo-element positioning */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease; /* Smooth transitions */
+}
+
+nav ul li a:hover {
+  color: #ffeb3b; /* Highlight color on hover */
+  transform: translateY(-5px); /* Lift effect on hover */
+  letter-spacing: 1px; /* Slightly increased spacing */
+}
+
+nav ul li::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #ffeb3b; /* Underline effect */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+nav ul li:hover::after {
+  transform: scaleX(1); /* Expand underline effect on hover */
+}
+
+.custom-icon {
+  height: 30px;
+  font-size: 24px; /* Adjusted for better visibility */
+  transition: font-size 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.custom-icon:hover {
+  color: #ffeb3b; /* Highlight color on hover */
+  font-size: 28px; /* Slightly increase size on hover */
+}
+
+.icon1 {
+  margin-right: 15px; /* Adjusted margin */
+}
+
+@media (max-width: 1200px) {
+  nav {
+    flex-direction: row;
+    align-items:center;
+    padding:  1rem;
+
+  }
+
+  .logo-container {
+    margin: 1rem 0;
+   
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+    width: 50%;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 1px; /* Space between menu items */
+  }
+
+  .custom-icon {
+    
+    font-size: 10px; /* Adjust size for mobile */
+    margin-right: 0;
+  }
+
+  .icon1 {
+    margin-left: 0;
+  }
+}

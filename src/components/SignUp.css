@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.signup-bg {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(120deg, #a2c2e4 0%, #f4e5d9 100%);
+  margin-top: 0;
+}
+
+.signup-form {
+  background-color: white;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 40px 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  font-family: 'Roboto', sans-serif;
+  animation: slideIn 1s ease forwards;
+  opacity: 0;
+}
+
+.sign-h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #fd8e3e;
+  box-shadow: 0 0 10px rgba(253, 142, 62, 0.2);
+  outline: none;
+}
+
+.signup-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  min-width: 200px;
+  padding: 15px;
+  font-size: 18px;
+  color: white;
+  background-color: #fd8e3e;
+  letter-spacing: 2px;
+  box-shadow: 0 5px 15px rgba(253, 142, 62, 0.4);
+  position: relative;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+.signup-button:hover {
+  background-color: #f07325;
+  box-shadow: 0 8px 20px rgba(240, 115, 37, 0.4);
+  transform: translateY(-3px);
+}
+
+.signup-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+.signup-button:hover::before {
+  opacity: 1;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Additional styling for responsive design */
+@media (max-width: 600px) {
+  .signup-form {
+    padding: 30px;
+  }
+
+  input {
+    padding: 12px;
+  }
+
+  .signup-button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}

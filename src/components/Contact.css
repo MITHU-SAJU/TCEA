@@ -1,0 +1,182 @@
+.contact-bg {
+  background-color: antiquewhite;
+  margin-top: -3rem;
+  padding: 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-section, .right-section {
+  margin-top:6rem;
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.contact-form-container {
+  
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: wheat;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+  font-size: 20px;
+  margin-bottom: 34px;
+  color: #333;
+  text-align: center;
+}
+
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-container .form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.contact-form-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+  
+}
+
+.contact-form-container input[type='text'],
+.contact-form-container input[type='email'],
+.contact-form-container textarea {
+ 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form-container textarea {
+  height: 98px;
+  width: 100%;
+  resize: vertical;
+}
+.contact-form-container input[type='email']{
+  height: 20px;
+  width: 90%;
+  resize: vertical;
+}
+
+.contact-form-container button[type='submit'] {
+  background-color:#333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form-container button[type='submit']:hover {
+  background-color:orange;
+}
+
+.contact-form-container p {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #555;
+}
+
+.address p {
+  margin-top: 1px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;
+  
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.logoloc, .logodig {
+  margin-left: 45%;
+  margin-top: 3px;
+  height: 50px;
+  margin-bottom: 5px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.dc {
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(120px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.button {
+  margin-left: 27%;
+  width: 280px;
+  height: 50px;
+  border: 3px solid #8332ab;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  color: black;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 24px;
+  transition: all 0.5s ease;
+}
+
+.button:before {
+  content: "FOLLOW US";
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 15px;
+  letter-spacing: 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:black;
+  transition: all 0.5s ease;
+}
+
+.button:hover {
+  background: #fff;
+}
+
+.button:hover:before {
+  top: -50%;
+}
+
+.button a {
+  color: orange;
+  text-decoration: none;
+}
+
+.button a:hover {
+  color:orange;
+}
